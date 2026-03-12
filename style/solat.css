@@ -1,0 +1,167 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* DATE */
+.date-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    background: #f3f3f3;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.date-nav button {
+    border: none;
+    background: #0f5132;
+    color: white;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* SUMMARY */
+.summary {
+    background: linear-gradient(135deg, #0f5132, #198754);
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 15px 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.stats span {
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.status {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* NAVBAR */
+.nav-container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 15px;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    background: #f1f1f1;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.nav-item-solat {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item-solat.active {
+    background: #0f5132;
+    color: white;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 52px;
+}
+
+.header h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* PRAYER */
+.prayer {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.prayer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 90px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.progress {
+    height: 6px;
+    background: #ddd;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.progress-bar {
+    height: 6px;
+    background: #f0ad4e;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.save-btn {
+    width: 100%;
+    padding: 12px;
+    background: #0f5132;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 12px;
+    color: white;
+    font-size: 15px;
+}

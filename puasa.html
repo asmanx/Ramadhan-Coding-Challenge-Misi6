@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker Puasa</title>
+    <link rel="stylesheet" href="style/puasa.css">
+    <link rel="stylesheet" href="style/semua.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo"></div>
+        
+        <div class="judul-header">
+            <h2>RAMADHAN PORTAL</h2>
+        </div>
+
+        <!-- BUTTON NAVIGASI -->
+        <div class="button-navigasi">
+            <a href="index.html" class="nav-item">Doa Puasa</a>
+            <a href="zikir.html" class="nav-item">Hitung Zikir</a>
+            <a href="zakat.html" class="nav-item">Kalkulator Zakat</a>
+            <a href="imsak.html" class="nav-item">Jadwal Imsakiyah</a>
+            <a href="solat.html" class="nav-item active">To-Do-List</a>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <div class="nav-container">
+        <div class="navbar">
+
+            <a href="solat.html" class="nav-item-puasa">Sholat</a>
+            <a href="quran.html" class="nav-item-puasa">Quran</a>
+            <a href="puasa.html" class="nav-item-puasa active">Puasa</a>
+            <a href="zikir.html" class="nav-item-puasa">Zikir</a>
+
+        </div>
+    </div>
+
+    <!-- CONTAINER -->
+    <div class="container">
+        <h2>Puasa Tracker</h2>
+        <div class="selected-day" id="selectedDay">Pilih tanggal Ramadhan</div>
+        <div class="calendar" id="calendar"></div>
+
+        <div class="progress">
+            <div class="progress-bar" id="progressBar">
+                <span id="progressText">0%</span>
+            </div>
+        </div>
+
+        <div class="status" id="status">Awali Dengan Niat</div>
+
+        <div class="options">
+            <label>
+                <input type="checkbox" id="fastNo">Tidak Puasa
+            </label>
+
+            <label>
+                <input type="checkbox" id="fastYes">Sudah Puasa
+            </label>
+        </div>
+
+        <button onclick="save()">Simpan</button>
+    </div>
+
+    <footer>
+        <p>Created by Asman</p>
+    </footer>
+
+    <script src="script/puasa.js"></script>
+
+</body>
+
+</html>

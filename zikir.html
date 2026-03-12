@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker Zikir</title>
+    <link rel="stylesheet" href="style/zikir.css">
+    <link rel="stylesheet" href="style/semua.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="logo"></div>
+
+        <div class="judul-header">
+            <h2>RAMADHAN PORTAL</h2>
+        </div>
+
+        <!-- BUTTON NAVIGASI -->
+        <div class="button-navigasi">
+            <a href="index.html" class="nav-item">Doa Puasa</a>
+            <!-- <a href="zikir.html" class="nav-item">Hitung Zikir</a> -->
+            <a href="zakat.html" class="nav-item">Kalkulator Zakat</a>
+            <a href="imsak.html" class="nav-item">Jadwal Imsakiyah</a>
+            <a href="solat.html" class="nav-item active">To-Do-List</a>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <div class="nav-container">
+        <div class="navbar">
+
+            <a href="index.html" class="nav-item-zikir">Sholat</a>
+            <a href="quran.html" class="nav-item-zikir">Quran</a>
+            <a href="puasa.html" class="nav-item-zikir">Puasa</a>
+            <a href="zikir.html" class="nav-item-zikir active">Zikir</a>
+
+        </div>
+    </div>
+
+    <!-- CONTAINER -->
+    <div class="container">
+        <div class="notification" id="notification">Target Tercapai</div>
+        <h2>Zikir Counter</h2>
+        <div class="subtitle">Zikir Harian</div>
+        <div class="counter-display" id="counter">0</div>
+
+        <div class="set-target">
+            <div class="target">
+                Target: <span id="targetDisplay">0</span>
+            </div>
+
+            <input type="number" id="targetInput" placeholder="Isi target"> <br>
+            <button id="setTargetBtn">Set Target</button>
+        </div>
+
+        <div class="button-wrapper">
+            <button class="btn-add" id="addBtn">+</button>
+            <button class="btn-reset" id="resetBtn">R</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created by Asman</p>
+    </footer>
+
+    <Script src="script/zikir.js"></Script>
+
+</body>
+
+</html>

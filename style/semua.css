@@ -1,0 +1,68 @@
+body {
+    background: linear-gradient(rgba(15, 81, 50, 0.75), rgba(15, 81, 50, 0.75)), url("https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?auto=format&fit=crop&w=1400&q=80");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* LOGO */
+.logo {
+    background: transparent;
+    background-image: url(../img/logo-ramadhan.png);
+    background-size: cover; height: 100px; width: 100px;
+}
+
+/* JUDUL HEADER */
+.judul-header {
+    color: white;
+    font-family:cursive;
+}
+
+.button-navigasi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-item {
+    font-family: cursive;
+    color: #ffc107;
+    border-radius: 15px;
+    padding: 12px 40px;
+    text-decoration: none;
+    border: 2px solid #ffc107;
+    background: transparent;
+    font-weight: bolder;
+}
+
+.nav-item:hover {
+    background: #ffc107;
+    color: white;
+}
+
+.nav-item.active {
+    background: #ffc107;
+    color: white;
+}
+
+.button-navigasi a:hover {
+    background: #ffc107;
+    color: white;
+}
+
+@media (max-width:600px) {
+    .button-navigasi a {
+        width: 100%;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Zakat</title>
+    <link rel="stylesheet" href="style/zakat.css">
+    <link rel="stylesheet" href="style/semua.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"></div>
+
+        <div class="judul-header">
+            <h2>RAMADHAN PORTAL</h2>
+        </div>
+
+        <!-- BUTTON NAVIGASI -->
+        <div class="button-navigasi">
+            <a href="index.html" class="nav-item">Doa Puasa</a>
+            <!-- <a href="zikir.html" class="nav-item">Hitung Zikir</a> -->
+            <a href="zakat.html" class="nav-item active">Kalkulator Zakat</a>
+            <a href="imsak.html" class="nav-item">Jadwal Imsakiyah</a>
+            <a href="solat.html" class="nav-item">To-Do-List</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Kalkulator Zakat</h1>
+            <p class="subtitle">Hitung zakat dengan mudah</p>
+            <div class="form-group">
+                <label>Jenis Zakat</label>
+                <select onchange="pilihZakat(this.value)">
+                    <option value="penghasilan">Zakat Penghasilan</option>
+                    <option value="emas">Zakat Emas</option>
+                </select>
+            </div>
+
+            <!-- FORM PENGHASILAN -->
+            <div id="formPenghasilan">
+                <div class="form-group">
+                    <label>Gaji</label>
+                    <input type="number" id="gaji">
+                </div>
+
+                <div class="form-group">
+                    <label>Penghasilan Lain</label>
+                    <input type="number" id="lain">
+                </div>
+
+                <div class="form-group">
+                    <label>Harga Emas / gram</label>
+                    <input type="number" id="hargaEmas">
+                </div>
+            </div>
+
+            <!-- FORM EMAS -->
+            <div id="formEmas" style="display:none">
+                <div class="form-group">
+                    <label>Total Emas (gram)</label>
+                    <input type="number" id="emas">
+                </div>
+
+                <div class="form-group">
+                    <label>Harga Emas / gram</label>
+                    <input type="number" id="hargaEmasEmas">
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="reset" onclick="resetForm()">Reset</button>
+                <button class="hitung" onclick="hitungZakat()">Hitung</button>
+            </div>
+
+            <div class="result">
+                <div class="result-card">
+                    <span>Total Harta</span>
+                    <span id="total">-</span>
+                </div>
+
+                <div class="result-card">
+                    <span>Nisab</span>
+                    <span id="nisab">-</span>
+                </div>
+
+                <div class="result-card">
+                    <span>Status</span>
+                    <span id="status">-</span>
+                </div>
+
+                <div class="zakat-box">
+                    <p>Jumlah Zakat</p>
+                    <h2 id="zakat">-</h2>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- <footer class="main-footer">
+        ©2026 Created By Asman
+    </footer> -->
+
+    <script src="script/zakat.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Imsakiyah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/imsak.css">
+    <link rel="stylesheet" href="style/semua.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo"></div>
+
+        <div class="judul-header">
+            <h2>RAMADHAN PORTAL</h2>
+        </div>
+
+        <!-- BUTTON NAVIGASI -->
+        <div class="button-navigasi">
+            <a href="index.html" class="nav-item">Doa Puasa</a>
+            <!-- <a href="zikir.html" class="nav-item">Hitung Zikir</a> -->
+            <a href="zakat.html" class="nav-item">Kalkulator Zakat</a>
+            <a href="imsak.html" class="nav-item active">Jadwal Imsakiyah</a>
+            <a href="solat.html" class="nav-item">To-Do-List</a>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <section class="card-controls">
+            <label for="kota" style="font-weight: 600;">Cari Kota Anda</label>
+            <div class="select-wrapper">
+                <select id="kota">
+                    <option value="">Pilih Kota</option>
+                    <optgroup label="Jawa">
+                        <option value="1301">Jakarta</option>
+                        <option value="1219">Bandung</option>
+                        <option value="1635">Surabaya</option>
+                        <option value="1505">Semarang</option>
+                        <option value="1503">Yogyakarta</option>
+                    </optgroup>
+                    <optgroup label="Sumatera">
+                        <option value="0201">Medan</option>
+                        <option value="0202">Binjai</option>
+                        <option value="0203">Pematangsiantar</option>
+                        <option value="0310">Padang</option>
+                        <option value="0311">Bukittinggi</option>
+                        <option value="0312">Payakumbuh</option>
+                        <option value="0601">Palembang</option>
+                        <option value="0602">Prabumulih</option>
+                        <option value="0603">Lubuklinggau</option>
+                        <option value="0801">Bandar Lampung</option>
+                        <option value="0501">Jambi</option>
+                    </optgroup>
+                    <optgroup label="Sulawesi">
+                        <option value="3001">Makassar</option>
+                        <option value="3002">Parepare</option>
+                        <option value="3003">Palopo</option>
+                        <option value="3101">Manado</option>
+                        <option value="3201">Palu</option>
+                        <option value="3301">Kendari</option>
+                        <option value="3401">Gorontalo</option>
+                    </optgroup>
+                    <optgroup label="Kalimantan">
+                        <option value="2201">Pontianak</option>
+                        <option value="2301">Banjarmasin</option>
+                        <option value="2401">Palangkaraya</option>
+                        <option value="2501">Samarinda</option>
+                        <option value="2502">Balikpapan</option>
+                    </optgroup>
+                    <optgroup label="Bali">
+                        <option value="5101">Denpasar</option>
+                        <option value="5201">Mataram</option>
+                    </optgroup>
+                    <optgroup label="Nusa Tenggara">
+                        <option value="5301">Kupang</option>
+                    </optgroup>
+                    <optgroup label="Papua">
+                        <option value="6001">Jayapura</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div id="status-container">
+                <p id="loading">Memuat data...</p>
+                <p id="error"></p>
+            </div>
+        </section>
+
+        <!-- TABLE -->
+        <section class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>TANGGAL</th>
+                        <th>IMSAK</th>
+                        <th>SUBUH</th>
+                        <th>DZUHUR</th>
+                        <th>ASHAR</th>
+                        <th>MAGHRIB</th>
+                        <th>ISYA</th>
+                    </tr>
+                </thead>
+                <tbody id="jadwal-body">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Created by <strong>Asman</strong></p>
+    </footer>
+
+    <script src="script/imsak.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+ :root {
+     --primary-green: #064e3b;
+     --accent-gold: #fbbf24;
+     --glass-bg: rgba(255, 255, 255, 0.9);
+     --text-main: #1f2937;
+ }
+
+ /* MAIN CONTAINER */
+ main {
+     max-width: 1000px;
+     margin: 0 auto 4rem auto;
+     padding: 0 1rem;
+ }
+
+ /* CONTROLS / SELECT */
+ .card-controls {
+     background: var(--glass-bg);
+     backdrop-filter: blur(10px);
+     padding: 1.5rem;
+     border-radius: 16px;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+     margin-bottom: 2rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 1rem;
+ }
+
+ .select-wrapper {
+     width: 100%;
+     max-width: 400px;
+     position: relative;
+ }
+
+ select {
+     width: 100%;
+     padding: 12px 20px;
+     font-size: 1rem;
+     border-radius: 12px;
+     border: 2px solid #e5e7eb;
+     background: white;
+     cursor: pointer;
+     appearance: none;
+     transition: all 0.3s ease;
+ }
+
+ select:focus {
+     outline: none;
+     border-color: var(--primary-green);
+     box-shadow: 0 0 0 4px rgba(6, 78, 59, 0.1);
+ }
+
+ /* TABLE */
+ .table-container {
+     background: var(--glass-bg);
+     backdrop-filter: blur(10px);
+     border-radius: 16px;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+     overflow-x: auto;
+ }
+
+ table {
+     width: 100%;
+     border-collapse: collapse;
+     font-size: 0.95rem;
+     min-width: 600px;
+ }
+
+ thead {
+     background: #dbaa17;
+     color: white;
+ }
+
+ th {
+     padding: 1.25rem;
+     font-weight: 600;
+     text-transform: uppercase;
+     font-size: 0.75rem;
+     letter-spacing: 0.05em;
+ }
+
+ td {
+     padding: 1rem;
+     text-align: center;
+     border-bottom: 1px solid #f3f4f6;
+ }
+
+ tr:last-child td {
+     border-bottom: none;
+ }
+
+ tr:hover {
+     background: rgba(6, 78, 59, 0.03);
+ }
+
+ /* TODAY*/
+ .today {
+     background: #fef3c7 !important;
+     font-weight: 700;
+     color: #92400e;
+ }
+
+ .today td {
+     border-top: 2px solid var(--accent-gold);
+     border-bottom: 2px solid var(--accent-gold);
+ }
+
+ /* STATUS MESSAGES */
+ #status-container {
+     text-align: center;
+     margin: 0;
+     min-height: 24px;
+ }
+
+ #loading {
+     color: white;
+     font-style: italic;
+     display: none;
+ }
+
+ #error {
+     color: var(--accent-gold);
+     background: rgba(0, 0, 0, 0.5);
+     padding: 5px 15px;
+     border-radius: 20px;
+     font-size: 0.85rem;
+     display: none;
+ }
+
+ #error:not(:empty) {
+     display: inline-block;
+ }
+
+ /* FOOTER */
+ footer {
+     text-align: center;
+     padding: 2rem;
+     color: rgba(255, 255, 255, 0.7);
+     font-size: 0.9rem;
+ }
+
+ /* RESPONSIVE */
+ @media (max-width: 640px) {
+     header h1 {
+         font-size: 1.8rem;
+     }
+
+     th,
+     td {
+         padding: 0.75rem 0.5rem;
+         font-size: 0.8rem;
+     }
+
+     .card-controls {
+         padding: 1rem;
+     }
+ }

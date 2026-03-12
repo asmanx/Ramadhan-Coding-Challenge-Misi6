@@ -1,0 +1,114 @@
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px; /*Hilangkan untuk final result*/
+    padding: 30px 25px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+h1 {
+    font-size: 22px;
+    color: #0f5132;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #0f5132aa;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+label {
+    font-size: 13px;
+    color: #0f5132;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 9px;
+    margin-top: 4px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hitung {
+    background: #0f5132;
+    color: white;
+}
+
+.reset {
+    background: #d4af37;
+    color: white;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.result-card {
+    background: #f9f9f9;
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    box-shadow: 0 20px 50px rgba(179, 177, 177, 0.25);
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.zakat-box {
+    background: #e8fff1;
+    border: 2px solid #d4af37;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.zakat-box h2 {
+    margin-top: 4px;
+    color: #0f5132;
+}
+
+.main-footer {
+    width: 100%;
+    margin-top: auto;
+    background: rgba(0, 0, 0, 0.35);
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+}
